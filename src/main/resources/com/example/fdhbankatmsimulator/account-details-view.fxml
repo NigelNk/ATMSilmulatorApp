@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800" prefWidth="800" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fdhbankatmsimulator.AccountDetailsController">
+
+    <!-- Logo -->
+    <ImageView fx:id="bankImage" fitHeight="100" fitWidth="100" layoutX="105" layoutY="15">
+        <image>
+            <Image url="@icons/fdh.png" />
+        </image>
+    </ImageView>
+
+    <!-- Form info -->
+    <Label layoutX="380" layoutY="30" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Form No :" />
+    <Label fx:id="formNoLabel" layoutX="470" layoutY="30" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+    <Label layoutX="600" layoutY="10" style="-fx-font-size: 16;" text="PAGE 3" />
+    <Label layoutX="350" layoutY="60" style="-fx-font-size: 25; -fx-font-weight: bold;" text="Account Details" />
+
+    <!-- Account type -->
+    <Label layoutX="100" layoutY="140" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Account Type :" />
+    <!-- Declare RadioButtons -->
+    <RadioButton fx:id="savingAccount" layoutX="100" layoutY="180" style="-fx-font-size: 16;" text="Savings Account" />
+
+    <RadioButton fx:id="currentAccount" layoutX="97.0" layoutY="224.0" style="-fx-font-size: 16;" text="Current Account" />
+
+    <!-- Card info -->
+    <Label layoutX="100" layoutY="280" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Card Number :" />
+    <Label layoutX="100" layoutY="310" style="-fx-font-size: 12;" text="(Your 16-Digit Card Number)" />
+    <Label fx:id="accountNumberLabel" layoutX="330" layoutY="280" style="-fx-font-size: 18;" text="XXXX-XXXX-XXXX-XXXX" />
+    <Label layoutX="330" layoutY="310" style="-fx-font-size: 12;" text="Remember to keep copy your Card Number Somewhere secured." />
+
+    <!-- PIN -->
+    <Label layoutX="100" layoutY="350" style="-fx-font-size: 18; -fx-font-weight: bold;" text="PIN :" />
+    <Label layoutX="100" layoutY="380" style="-fx-font-size: 12;" text="(4-Digit PIN)" />
+    <Label fx:id="pinLabel" layoutX="330" layoutY="350" style="-fx-font-size: 18;" text="XXXX" />
+
+    <!-- Services -->
+    <Label layoutX="100" layoutY="430" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Services Required :" />
+    <CheckBox layoutX="100" layoutY="480" style="-fx-font-size: 16;" text="ATM CARD" />
+    <CheckBox layoutX="350" layoutY="480" style="-fx-font-size: 16;" text="INTERNET BANKING" />
+    <CheckBox layoutX="100" layoutY="530" style="-fx-font-size: 16;" text="MOBILE BANKING" />
+    <CheckBox layoutX="350" layoutY="530" style="-fx-font-size: 16;" text="EMAIL ALERT" />
+
+    <!-- Declaration -->
+    <CheckBox layoutX="97.0" layoutY="592.0" selected="true" style="-fx-font-size: 13;" text="I hereby declare that the above details are correct to the best of my knowledge." />
+
+    <!-- Buttons -->
+    <Button fx:id="submitBtn" layoutX="236.0" layoutY="638.0" onAction="#handleSubmit" style="-fx-background-color: blue; -fx-text-fill: gold; -fx-font-weight: bold;" text="Submit" />
+
+    <Button fx:id="cancelBtn" layoutX="406.0" layoutY="638.0" onAction="#handleCancel" style="-fx-background-color: gray; -fx-text-fill: gold; -fx-font-weight: bold;" text="Cancel" />
+   <Label layoutX="330.0" layoutY="380.0" style="-fx-font-size: 12;" text="Remember to keep copy your pin Somewhere secured." />
+   <RadioButton fx:id="currentAccount1" layoutX="265.0" layoutY="180.0" style="-fx-font-size: 16;" text="Fixed Deposit Account" />
+
+</AnchorPane>

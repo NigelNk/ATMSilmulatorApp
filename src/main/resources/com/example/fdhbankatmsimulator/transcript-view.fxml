@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600" prefWidth="539.0" style="-fx-background-color: #f8f9fa; -fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.fdhbankatmsimulator.TranscriptController">
+
+    <!-- Title -->
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Bank Statement" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20" />
+
+    <!-- Account Info -->
+    <VBox spacing="5" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="70">
+        <Label fx:id="lblAccountName" style="-fx-font-size: 14px;" text="Account Name: Nigel M." />
+        <Label fx:id="lblAccountNumber" style="-fx-font-size: 14px;" text="Account Number: xxxxxxxxxxxx" />
+        <Label fx:id="lblDate" style="-fx-font-size: 14px;" text="Date: 14-Oct-2025" />
+    </VBox>
+
+    <!-- Transactions Table -->
+    <TableView fx:id="transactionsTable" style="-fx-background-color: white; -fx-border-color: #bdc3c7; -fx-border-width: 1px;" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="140">
+
+        <columns>
+            <TableColumn fx:id="colDate" prefWidth="100" text="Date" />
+            <TableColumn fx:id="colDescription" prefWidth="200" text="Description" />
+            <TableColumn fx:id="colDebit" prefWidth="80" text="Debit" />
+            <TableColumn fx:id="colCredit" prefWidth="80" text="Credit" />
+            <TableColumn fx:id="colBalance" prefWidth="80" text="Balance" />
+        </columns>
+    </TableView>
+</AnchorPane>

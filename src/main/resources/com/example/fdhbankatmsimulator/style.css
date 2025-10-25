@@ -1,0 +1,99 @@
+/* Sidebar Buttons */
+.quick-btn {
+    -fx-background-color: #2c44ad;
+    -fx-text-fill: gold;
+    -fx-font-size: 25px;
+    -fx-alignment: CENTER;
+    -fx-padding: 10 15 10 20;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease;
+}
+
+.quick-btn:hover {
+    -fx-text-fill: #aaa6a5;
+}
+
+.quick-btn:pressed {
+    -fx-background-color: #6d6c6a;
+    -fx-text-fill: white;
+}
+.keypad-btn {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 15;
+    -fx-cursor: hand;
+}
+
+.keypad-btn:hover {
+    -fx-background-color: #34495e;
+}
+
+
+.quick-btn.active {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+}
+
+.button-cancel {
+    -fx-background-color: red;
+    -fx-text-fill: #030303;
+    -fx-font-weight: bold;
+}
+.button-cancel:hover {
+    -fx-background-color: darkred;
+}
+
+.button-clear {
+    -fx-background-color: yellow;
+    -fx-text-fill: #030303;
+    -fx-font-weight: bold;
+}
+.button-clear:hover {
+    -fx-background-color: gold;
+}
+
+.button,
+.button-enter {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+    -fx-padding: 10 20;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button-enter{
+    -fx-background-color: green;
+}
+
+
+.button-enter:hover {
+    -fx-background-color: #015608;
+    -fx-border-color: #030303;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+.button:hover{
+    -fx-border-color: #ffffff;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+.button:armed,
+.button-enter:armed {
+    -fx-opacity: 0.9;
+}
+
+
+
+
+
+
+

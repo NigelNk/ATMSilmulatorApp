@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="1305.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fdhbankatmsimulator.InqueriesController">
+
+    <!-- LEFT PANE (ATM IMAGE + LOGIN FORM) -->
+    <left>
+        <StackPane fx:id="stackPane" prefHeight="659.0" prefWidth="920.0" style="-fx-background-color: #949191;">
+            <!-- ATM Image that auto-resizes -->
+            <ImageView fx:id="atmImage" fitHeight="659.0" fitWidth="920.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@icons/bg.png" />
+            </ImageView>
+            <AnchorPane prefHeight="658.0" prefWidth="920.0">
+                <AnchorPane layoutX="151.0" layoutY="118.0" prefHeight="328.0" prefWidth="393.0" style="-fx-background-color: #949191;">
+                    <ImageView fitHeight="57.0" fitWidth="80.0" layoutX="160.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@icons/fdh2.png" />
+                    </ImageView>
+                    <Button contentDisplay="BOTTOM" layoutX="16.0" layoutY="104.0" mnemonicParsing="false" onAction="#viewBalanceBtn" prefHeight="103.0" prefWidth="360.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="Check Balance">
+                        <graphic>
+                            <ImageView>
+                                <Image url="@icons/c.png" />
+                            </ImageView>
+                        </graphic>
+                        <font>
+                            <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                        </font>
+                    </Button>
+                    <Button contentDisplay="BOTTOM" layoutX="16.0" layoutY="219.0" mnemonicParsing="false" onAction="#transcriptBtn" prefHeight="103.0" prefWidth="362.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="View Transcript">
+                        <graphic>
+                            <ImageView>
+                                <Image url="@icons/d.png" />
+                            </ImageView>
+                        </graphic>
+                        <font>
+                            <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                        </font>
+                    </Button>
+                </AnchorPane>
+            </AnchorPane>
+        </StackPane>
+    </left>
+    <right>
+
+        <AnchorPane prefHeight="650.0" prefWidth="389.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <Button layoutX="8.0" layoutY="171.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="7">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="223.0" layoutY="358.0" mnemonicParsing="false" onAction="#enterBtn" prefHeight="85.0" prefWidth="133.0" styleClass="button-enter" text="Enter">
+                <graphic>
+                    <ImageView>
+                        <Image url="@icons/enter.png" />
+                    </ImageView>
+                </graphic>
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="78.0" layoutY="171.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="8">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="149.0" layoutY="171.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="9">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="263.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="4">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="78.0" layoutY="263.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="5">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="149.0" layoutY="263.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="6">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="362.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="1">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="78.0" layoutY="362.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="2">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="149.0" layoutY="362.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="3">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="453.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="78.0" layoutY="453.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="0">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="149.0" layoutY="453.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="60.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="222.0" layoutY="169.0" mnemonicParsing="false" onAction="#cancelBtn" prefHeight="77.0" prefWidth="134.0" styleClass="button-cancel" text="Cancel">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@icons/cancel.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="223.0" layoutY="263.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="133.0" styleClass="button-clear" text="Clear">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@icons/clear.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+            <Button layoutX="226.0" layoutY="453.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="77.0" prefWidth="131.0" style="-fx-background-color: #353434; -fx-text-fill: white; -fx-font-weight: bold;  -fx-border-radius: 8;" text="Back">
+                <font>
+                    <Font name="DejaVu Sans Condensed Bold" size="23.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+    </right>
+</BorderPane>

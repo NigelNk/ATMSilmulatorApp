@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="744.0" prefWidth="916.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fdhbankatmsimulator.CreateAccountController">
+
+    <!-- Bank Image -->
+    <ImageView fx:id="bankImage" fitHeight="100.0" fitWidth="100.0" layoutX="100.0" layoutY="30.0" preserveRatio="true">
+        <image>
+            <Image url="@icons/fdh.png" />
+        </image>
+    </ImageView>
+
+    <!-- PAGE TITLE -->
+    <Label layoutX="730.0" layoutY="10.0" text="PAGE 1" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="15.0" />
+        </font>
+    </Label>
+
+    <Label layoutX="300.0" layoutY="140.0" text="Personal Information" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+
+    <!-- Name -->
+    <Label layoutX="100.0" layoutY="190.0" text="Name :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textName" layoutX="300.0" layoutY="190.0" prefHeight="30.0" prefWidth="400.0" style="-fx-font-family: 'Raleway'; -fx-font-weight: bold; -fx-font-size: 14;" />
+
+    <!-- Fathers Name -->
+    <Label layoutX="100.0" layoutY="240.0" text="Father's Name :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textFname" layoutX="300.0" layoutY="240.0" prefHeight="30.0" prefWidth="400.0" />
+
+    <!-- Date of Birth -->
+    <Label layoutX="100.0" layoutY="290.0" text="Date of Birth :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <DatePicker fx:id="dateChooser" layoutX="300.0" layoutY="290.0" prefWidth="400.0" />
+
+    <!-- Gender -->
+    <Label layoutX="100.0" layoutY="340.0" text="Gender :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <RadioButton fx:id="male" layoutX="300.0" layoutY="340.0" text="Male">
+      <toggleGroup>
+         <ToggleGroup fx:id="genderGroup" />
+      </toggleGroup></RadioButton>
+    <RadioButton fx:id="female" layoutX="450.0" layoutY="340.0" text="Female" toggleGroup="$genderGroup" />
+    <RadioButton fx:id="others" layoutX="600.0" layoutY="340.0" text="Other" toggleGroup="$genderGroup" />
+
+    <!-- Email -->
+    <Label layoutX="100.0" layoutY="390.0" text="Email Address :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textEmail" layoutX="300.0" layoutY="390.0" prefWidth="400.0" />
+
+    <!-- Marital Status -->
+    <Label layoutX="100.0" layoutY="440.0" text="Marital Status :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <RadioButton fx:id="married" layoutX="300.0" layoutY="440.0" text="Married">
+      <toggleGroup>
+         <ToggleGroup fx:id="maritalGroup" />
+      </toggleGroup></RadioButton>
+    <RadioButton fx:id="unmarried" layoutX="450.0" layoutY="440.0" text="Unmarried" toggleGroup="$maritalGroup" />
+
+    <!-- Address -->
+    <Label layoutX="100.0" layoutY="490.0" text="Address :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textAddress" layoutX="300.0" layoutY="490.0" prefWidth="400.0" />
+
+    <!-- City -->
+    <Label layoutX="100.0" layoutY="540.0" text="City :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textCity" layoutX="300.0" layoutY="540.0" prefWidth="400.0" />
+
+    <!-- Pin -->
+    <Label layoutX="100.0" layoutY="590.0" text="Pin Code :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textPin" layoutX="300.0" layoutY="590.0" prefWidth="400.0" />
+
+    <!-- State -->
+    <Label layoutX="100.0" layoutY="640.0" text="State :" textFill="black">
+        <font>
+            <Font name="Raleway Bold" size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="textState" layoutX="300.0" layoutY="640.0" prefWidth="400.0" />
+
+    <!-- Next Button -->
+    <Button fx:id="nextBtn" layoutX="610.0" layoutY="684.0" onAction="#onNextClicked" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 20; -fx-font-family: 'Raleway'; -fx-font-weight: bold;" text="NEXT" />
+   <Button fx:id="backBtn" layoutX="491.0" layoutY="684.0" onAction="#backBtn" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 20; -fx-font-family: 'Raleway'; -fx-font-weight: bold;" text="Back" />
+
+</AnchorPane>
